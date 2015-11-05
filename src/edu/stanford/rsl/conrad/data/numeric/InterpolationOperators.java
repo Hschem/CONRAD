@@ -78,5 +78,10 @@ public abstract class InterpolationOperators {
 		addInterpolateLinear(grid.getSubGrid(lower), x, y, (float) ((1.0-d)*val));
 		if (d != 0.0) addInterpolateLinear(grid.getSubGrid(lower+1), x, y, (float) (d*val));
 	}
+
+	public static float interpolationLinear() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }
 
