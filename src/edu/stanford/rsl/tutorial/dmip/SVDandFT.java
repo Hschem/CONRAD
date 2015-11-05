@@ -416,7 +416,7 @@ public class SVDandFT {
 		optimizationProblem2(vectors);
 		
 		//Load an image from file
-		String filename = "/home/cip/medtech2015/dy31vuna/Desktop/i5dmip/Reconstraction/CONRAD/src/edu/stanford/rsl/tutorial/dmip/yu_fill.jpg";
+		String filename = "/proj/i5dmip/dy31vuna/Reconstruction/CONRAD/src/edu/stanford/rsl/tutorial/dmip/yu_fill.jpg";
 		Grid2D image = ImageUtil.wrapImagePlus(IJ.openImage(filename)).getSubGrid(0);
 		image.show();
 		
