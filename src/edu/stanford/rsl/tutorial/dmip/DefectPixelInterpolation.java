@@ -145,7 +145,7 @@ public class DefectPixelInterpolation {
 				Complex  Wval_twice =new Complex(W.getRealAtIndex(twice_s1, twice_t1) , W.getImagAtIndex(twice_s1, twice_t1));
 				
 				Complex FHatNextVal_s1t1 = new Complex(FHatNext.getRealAtIndex(s1, t1) , FHatNext.getImagAtIndex(s1, t1));
-				Complex FHatNextVal_s2t2 = new Complex(FHatNext.getRealAtIndex(twice_s1, twice_t1) , FHatNext.getImagAtIndex(twice_s1, twice_t1));
+				Complex FHatNextVal_s2t2 = new Complex(FHatNext.getRealAtIndex(s2, t2) , FHatNext.getImagAtIndex(s2, t2));
 				
 				Complex val = ( (Gval.mul(Wval_00.getConjugate()) ).sub(Gval.getConjugate().mul(Wval_twice) )).mul(dim[0]*dim[1]);
 				val = val.div(Wval_00.getMagn() * Wval_00.getMagn() - Wval_twice.getMagn() * Wval_twice.getMagn() );
